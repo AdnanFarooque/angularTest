@@ -19,13 +19,13 @@
             </a>
         </div>
         <div class="flex-grow-1 float-right">
-            <!-- <div *ngIf="isLoggedIn" ngbDropdown class="float-right"> -->
-            <!-- <div ngbDropdown class="float-right">
+            <div *ngIf="isLoggedIn" ngbDropdown class="float-right">
                 <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                     <button (click)="goToUserProfile()" ngbDropdownItem>
-                    <button ngbDropdownItem>Profile</button>
+                        Profile
+                    </button>
                     <button (click)="logout()" ngbDropdownItem>Logout</button>
-                    <button ngbDropdownItem>Logout</button>
+                    <!-- <button ngbDropdownItem>Logout</button> -->
                 </div>
                 <button
                     class="userdetails"
@@ -38,15 +38,12 @@
                     />
                     {{ username }}
                 </button>
-            </div> -->
-            <!-- <div *ngIf="!isLoggedIn"> -->
-            <div>
-                <a routerLink="/signup" class="float-right sign-up mr-2"
+            </div>
+            <div *ngIf="!isLoggedIn">
+                <a routerLink="/sign-up" class="float-right sign-up mr-2"
                     >Sign up</a
                 >
-                <!-- <a class="float-right sign-up mr-2">Sign up</a> -->
                 <a routerLink="/login" class="float-right login mr-2">Login</a>
-                <!-- <a class="float-right login mr-2">Login</a> -->
             </div>
         </div>
     </nav>

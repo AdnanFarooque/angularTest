@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { SignupRequestPayload } from './signup.request.payload';
-import { AuthService } from '../service.service'
+import { SignupRequestPayload } from './signup-request.payload';
+import { AuthService } from '../shared/auth.service'
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 
@@ -10,6 +10,7 @@ import { ToastrService } from 'ngx-toastr';
 	templateUrl: './signup.component.html',
 	styleUrls: ['./signup.component.css']
 })
+
 export class SignupComponent implements OnInit {
 
 	signupForm!: FormGroup;
